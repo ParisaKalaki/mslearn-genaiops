@@ -67,10 +67,11 @@ param aiFoundryProjectName string = 'ai-project-${environmentName}'
 param aiProjectDeploymentsJson string = '''
 [
   {
-    "name": "gpt-5.1",
+    "name": "gpt-oss-120b",
     "model": {
-      "format": "OpenAI",
-      "name": "gpt-5.1"
+      "format": "OpenAI-OSS",
+      "name": "gpt-oss-120b",
+      "version": "1"
     },
     "sku": {
       "name": "GlobalStandard",
